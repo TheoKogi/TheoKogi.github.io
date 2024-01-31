@@ -1,0 +1,239 @@
+/* For mobile screens */
+@media screen and (max-width: 768px) {
+    body {
+      font-size: 20px;
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    color: #000000;
+    background-color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #333, #725656);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    margin-left: 1rem;
+}
+
+header nav {
+    margin-right: 1rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav button {
+    margin: 0.25rem;
+}
+
+nav ul {
+    margin: 0.5rem;
+    display: flex;
+}
+
+nav li {
+    margin-left: 1rem;
+}
+
+nav a {
+    color: #fff;
+    margin-right: 10px;
+}
+
+nav a:hover {
+    color: #fc3c3c;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    outline: 2px dashed #333;
+    padding: 20px;
+    margin-bottom: 3rem;
+    line-height: 1.5;
+}
+
+footer {
+    background-image: linear-gradient(to bottom, #333, #725656);
+    color: #fff;
+    padding: 15px;
+}
+
+.footer-link {
+    color: #fff;
+    margin-right: 15px;
+}
+
+.footer-link:hover {
+    color: #fc3c3c;
+}
+
+#footer-desc, #footer-design {
+    margin: 0;
+    text-align: center;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li h3 {
+    margin-bottom: 0.5rem;
+}
+
+li p {
+    margin-bottom: 1rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.icon {
+    margin-right: 10px;
+    color: black;
+}
+
+.image-container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.chromeStore-icon {
+    border: 1px solid #333;
+    width: 125px;
+    height: 125px;
+}
+
+#contact {
+    text-align: left;
+}
+
+#randomize-button {
+    width: 150px;
+    height: 50px;
+    background-color: #fc3c3c;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+}
+
+#randomize-button:hover {
+    background-color: #cc0000;
+}
+
+#reset-button {
+    width: 150px;
+    height: 50px;
+    background-color: #3b2c2c;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+}
+
+#reset-button:hover {
+    background-color: #7e6262;
+}
+
+#profile-picture {
+    border: 1px solid #312a2a;
+    width: 400px;
+    height: 600px;
+}
+
+#arrow-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#arrow-to-top:hover {
+    background-color: #29ABE2;
+    color: #fff;
+}
+
+/* Printable Webpage */
+@media print {
+    @page {
+        margin: 0.5cm;
+    }    
+    header, footer, img, .image-container, #arrow-to-top{
+        display: none;
+    }
+    main section {
+        page-break-inside: avoid;
+    }
+    section {
+        outline: none;
+        margin-bottom: 0;
+    }    
+    body {
+        font-family: Arial, sans-serif;
+        font-size: 12pt;
+        line-height: 1.5;
+        color: #333;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: Georgia, serif;
+        font-weight: bold;
+        color: #333;
+    }
+    h2 {
+        font-size: 16pt;
+    }
+}
