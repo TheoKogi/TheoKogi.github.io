@@ -163,7 +163,7 @@ for (const info of theodoros.projects.chrome_extension) {
   extension_Link.textContent = info.name;
 
   const divElement = createElement('div');
-  divElement.classList.add('image-container');
+  divElement.classList.add('projecstIcon-container');
   divElement.appendChild(extension_Icon);
   divElement.innerHTML += `<p>${info.type}</p>`;
 
@@ -200,7 +200,7 @@ for (const info of theodoros.projects.website) {
   github_Link.textContent = info.name;
 
   const divElement = createElement('div');
-  divElement.classList.add('image-container');
+  divElement.classList.add('projecstIcon-container');
   divElement.innerHTML = `<p>${info.type}</p>`;
 
   const pElement_Description = createElement('p');

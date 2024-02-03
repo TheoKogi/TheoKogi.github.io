@@ -1,17 +1,14 @@
-/* For mobile screens */
-@media screen and (max-width: 768px) {
-    body {
-      font-size: 20px;
-    }
+html {
+    font-size: 18px;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    font-size: 18px;
+    flex-wrap: wrap;
     color: #000000;
     background-color: #FFFFFF;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
     text-align: justify;
@@ -24,14 +21,6 @@ header {
     justify-content: space-between;
     position: sticky;
     top: 0;
-}
-
-header h1 {
-    margin-left: 1rem;
-}
-
-header nav {
-    margin-right: 1rem;
 }
 
 nav {
@@ -57,12 +46,34 @@ nav a {
     margin-right: 10px;
 }
 
-nav a:hover {
-    color: #fc3c3c;
+#randomizeBtns-container {
+    display: flex;
+}
+
+#randomize-button {
+    width: 150px;
+    height: 50px;
+    background-color: #fc3c3c;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+}
+
+#reset-button {
+    width: 150px;
+    height: 50px;
+    background-color: #3b2c2c;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
 }
 
 main {
-    max-width: 800px;
+    max-width: 650px;
     margin: 0 auto;
     padding: 2rem;
 }
@@ -74,9 +85,32 @@ section {
     line-height: 1.5;
 }
 
+#profile-picture {
+    border: 1px solid #312a2a;
+    width: 40%;
+    height: auto;
+}
+
+.projecstIcon-container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+}
+
+.chromeStore-icon {
+    border: 1px solid #333;
+    width: 125px;
+    height: 125px;
+}
+
+#contact {
+    text-align: left;
+}
+
 footer {
     background-image: linear-gradient(to bottom, #333, #725656);
     color: #fff;
+    font-family: 'Ubuntu', sans-serif;
     padding: 15px;
 }
 
@@ -85,22 +119,25 @@ footer {
     margin-right: 15px;
 }
 
-.footer-link:hover {
-    color: #fc3c3c;
-}
-
 #footer-desc, #footer-design {
     margin: 0;
     text-align: center;
 }
 
+#arrow-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out;
+}
+
 a {
     font-weight: bold;
     text-decoration: underline;
-}
-
-button:hover {
-    cursor: pointer;
 }
 
 h1 {
@@ -138,73 +175,104 @@ li p {
     color: black;
 }
 
-.image-container {
-    display: grid;
-    grid-template-rows: auto 1fr;
-    justify-items: center;
-    align-items: center;
+/* Mouse pointer */
+@media (hover: hover) {
+    nav a:hover {
+        color: #fc3c3c;
+    }
+    button:hover {
+        cursor: pointer;
+    }
+    #randomize-button:hover {
+        background-color: #cc0000;
+    }
+    #reset-button:hover {
+        background-color: #7e6262;
+    }
+    .footer-link:hover {
+        color: #fc3c3c;
+    }
+    #arrow-to-top:hover {
+        background-color: #29ABE2;
+        color: #fff;
+    }
 }
 
-.chromeStore-icon {
-    border: 1px solid #333;
-    width: 125px;
-    height: 125px;
+/* Touchscreen */
+@media (hover: none) {
+    nav a:active {
+        color: #fc3c3c;
+    }
+    #randomize-button:active {
+        background-color: #cc0000;
+    }
+    #reset-button:active {
+        background-color: #7e6262;
+    }
+    .footer-link:active {
+        color: #fc3c3c;
+    }
+    #arrow-to-top:active {
+        background-color: #29ABE2;
+        color: #fff;
+    }
 }
 
-#contact {
-    text-align: left;
+/* Mobile devices */
+@media screen and (max-width: 767px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    header h1 {
+        font-size: 28px;
+    }
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+    main {
+        max-width: 400px;
+    }
+    section {
+        outline: 1px dashed #333;
+        padding: 10px;
+        margin-bottom: 1.5rem;
+        line-height: 1.25;
+    }
+    .icon {
+        margin-right: 5px;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }    
 }
 
-#randomize-button {
-    width: 150px;
-    height: 50px;
-    background-color: #fc3c3c;
-    border: none;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    border-radius: 0.25rem;
+/* Tablet devices */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    main {
+        max-width: 500px;
+    }
+    section {
+        padding: 15px;
+        margin-bottom: 2rem;
+        line-height: 1.5;
+    }    
 }
 
-#randomize-button:hover {
-    background-color: #cc0000;
-}
-
-#reset-button {
-    width: 150px;
-    height: 50px;
-    background-color: #3b2c2c;
-    border: none;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    border-radius: 0.25rem;
-}
-
-#reset-button:hover {
-    background-color: #7e6262;
-}
-
-#profile-picture {
-    border: 1px solid #312a2a;
-    width: 400px;
-    height: 600px;
-}
-
-#arrow-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 50%;
-    transition: background-color 0.3s ease-in-out;
-}
-
-#arrow-to-top:hover {
-    background-color: #29ABE2;
-    color: #fff;
+/* Desktop devices */
+@media screen and (min-width: 1024px) {
+    header h1 {
+        margin-left: 1rem;
+    }    
+    header nav {
+        margin-right: 1rem;
+    }
 }
 
 /* Printable Webpage */
@@ -212,7 +280,7 @@ li p {
     @page {
         margin: 0.5cm;
     }    
-    header, footer, img, .image-container, #arrow-to-top{
+    header, footer, img, .projecstIcon-container, #arrow-to-top{
         display: none;
     }
     main section {
