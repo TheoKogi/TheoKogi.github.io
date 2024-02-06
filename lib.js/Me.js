@@ -33,7 +33,7 @@ const theodoros = {
   other: [
       {
         job: "Waiter",
-        jobDescription: "Season work as a waiter A and B in cafe-bar-reastaurants. Cooperative work, customer-centric    approach."
+        jobDescription: "Season work as a waiter A and B in cafe-bar-restaurants. Cooperative work, customer-centric    approach."
       }
     ]
   },
