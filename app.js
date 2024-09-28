@@ -95,6 +95,7 @@ for (const info of theodoros.experience.other) {
 
 section_Experience.appendChild(h2_Experience);
 section_Experience.appendChild(ulElement_Experience);
+
 document.querySelector('main').appendChild(section_Experience);
 
 // Creation of 'Skills' section

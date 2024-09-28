@@ -7,7 +7,7 @@ const theodoros = {
     _linkedIn: 'https://www.linkedin.com/in/theodoros-kogiomtzis/',
     _github: 'https://github.com/TheoKogi',
     profile_picture: '/Images/Theodoros-Profile-Picture.jpg',
-    ambition: "Hello, my name is Theodoros Kogiomtzis and I am a recent graduate of International Hellenic University of Kavala with a Bachelor's degree in Computer Software Engineering. I am passionate about front-end development, graphic design, and product promotion. I have experience with HTML, CSS, and JavaScript. I am excited to create visually appealing and user-friendly web applications."
+    ambition: "Hello, my name is Theodoros Kogiomtzis and I am a graduate of International Hellenic University of Kavala with a Bachelor's degree in Computer Software Engineering. Passionate about front-end development, graphic design and software testing. Excited to participate in the creation of visually appealing and user-friendly web applications."
   },
   getFullName() {
     return `${this.about._fname} ${this.about._lname}`;
@@ -28,12 +28,19 @@ const theodoros = {
         duration: 'May 2022 - Oct 2022',
         location: 'Thessaloniki, Central Macedonia, Greece',
         jobDescription: "Software review, bugs highlighting, UI/UX and workflow test, Network activity analysis, User Manuals and program's documentation writing, document templates creation. Reports made with the use of project management and issue tracking software tool."
+      },
+      {
+        job: 'Software Engineer in Test',
+        company: 'Chubb',
+        duration: 'March 2024 - Today',
+        location: 'Thessaloniki, Central Macedonia, Greece',
+        jobDescription: "Identify and report defects to development teams. Participate in sprint planning, daily stand-up meetings, and retrospectives to ensure effective collaboration and continuous improvement. Develop and maintain technical documentation, including test plans, test cases, and test reports. Utilize JIRA tool for tracking defects, test cases, and project progress."
       }
   ],
   other: [
       {
         job: "Waiter",
-        jobDescription: "Season work as a waiter A and B in cafe-bar-restaurants. Cooperative work, customer-centric    approach."
+        jobDescription: "Season work as a waiter A and B in cafe-bar-restaurant. Cooperative work, customer-centric approach."
       }
     ]
   },
@@ -50,7 +57,11 @@ const theodoros = {
       },
       {
         name: 'Quality Assurance - Software Testing',
-        description: "Experience in assuring the quality of a web app product. Reviewing the product's use with Chrome Developer tools."
+        description: "Experience in assuring the quality of a web app product. Conducting thorough reviews of the product's functionality to ensure compliance with established requirements and specifications."
+      },
+      {
+        name: 'JIRA Tool',
+        description: "Proficient in using JIRA for testing and defect tracking, with expertise in creating and managing test cases, tracking defects, and collaborating with developers to ensure high-quality software releases."
       },
       {
         name: 'UI Design - Graphics',
@@ -66,7 +77,7 @@ const theodoros = {
       },
       {
         name: 'Microsoft Word - Microsoft Excel',
-        description: "Personal experience with writing formal content on 'Microsoft Word' (User Manuals, Program documentation, Thesis publication). Personal experience with data entry management in 'Microsoft Excel'."
+        description: "Proficient in 'Microsoft Word' for creating formal documents, including User Manuals, program documentation, and Thesis publications. Skilled in 'Microsoft Excel' for data entry management and analysis."
       }
     ],
     basic: [
